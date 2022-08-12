@@ -1,0 +1,45 @@
+import styled from "styled-components";
+
+export const HeaderContainer = styled.div`
+  width: 100vw;
+  height: 10vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+  display: flex;
+  justify-content: space-around;
+  background-color: red;
+  align-items: center;
+  button {
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+    &:hover {
+      background-color: #fff;
+    }
+
+    &:active {
+      box-shadow: #422800 2px 2px 0 0;
+      transform: translate(2px, 2px);
+    }
+
+    @media (min-width: 768px) {
+      .button-74 {
+        min-width: 120px;
+        padding: 0 25px;
+      }
+    }
+  }
+`;
